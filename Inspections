@@ -29,8 +29,8 @@ public class Inspections
             System.out.println("In week " + i + " inspect facorty " + x);
         }
         System.out.println("Facorty 1 got inspected " + c1 + " times ");
-        System.out.println("Facorty 1 got inspected " + c2 + " times ");
-        System.out.println("Facorty 1 got inspected " + c3 + " times ");
-        System.out.println("Facorty 1 got inspected " + c4 + " times ");
+        System.out.println("Facorty 2 got inspected " + c2 + " times ");
+        System.out.println("Facorty 3 got inspected " + c3 + " times ");
+        System.out.println("Facorty 4 got inspected " + c4 + " times ");
     }
 }
