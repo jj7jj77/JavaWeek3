@@ -1,0 +1,20 @@
+package javaclassweek3;
+import java.util.Scanner;
+public class EvenEntryLoop 
+{
+    public static void main(String[] args) 
+    {
+        Scanner input = new Scanner (System.in);
+        int x; //number given by user
+        do 
+        {
+            System.out.println(" Enter an even number or 999 to stop ");  //Asks user to type an even number or the sentinel value 999 to stop
+            x = input.nextInt();
+            if (x%2==0)
+                System.out.println("Good Job ");  //user types an even number, display the message "Good Job!" and then ask for an input
+            else
+                System.out.println("Bad Job! ");   //user types an odd number, display an error message and then ask for another input
+        }
+        while (x !=999); //user types the sentinel value 999, end the program
+    }
+}
