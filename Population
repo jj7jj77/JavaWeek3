@@ -1,0 +1,25 @@
+package javaclasshomework3;
+public class Population 
+{
+    public static void main(String[] args) 
+    {
+        //initialize the pop of each country
+        double Mex = 121;  //*the population of Mexico is 121 million
+        double USA = 315;  //**the population of the USA is 315 million 
+        
+        //initialize the pop percentage of each country
+        double MexPopRate = 1.01; //*and the population increase 1.01 percent annually
+        double USAPopRate = 0.15;  //**and the population is reduced 0.15 percent anually
+        
+        int i;
+        for(i=0; USA > Mex; i++)  //Write an application that displays the populations for the two countries every year until the population of Mexico exceeds that of 
+        {
+            System.out.println("Year " + i);  //Displays the number of years it took
+            System.out.println("Mexico's population is " + Math.round(Mex*100)/100.00 + " million");
+            System.out.println("USA's population is " + Math.round(USA*100)/100.00 + " million");
+            Mex += Mex * MexPopRate / 100;  //increase the Mex Pop
+            USA -= USA * USAPopRate / 100;  //decrease the USA Pop
+        }
+        System.out.println("It took " + i + " years for the population of Mexio to exceed the USA population ");
+    }
+}
