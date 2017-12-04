@@ -1,0 +1,35 @@
+package javaclasshomework3;
+import java.util.Scanner;
+public class BarChart 
+{
+    public static void main(String[] args) 
+    { 
+        Scanner input = new Scanner (System.in);
+        
+        //HS basketball tean has five players name Art, Bob, Cal, Dan and Eli
+        String PlayerName[]={"Art","Bob","Cal","Dan","Eli"};
+        int PlayerScores[] = new int[5];
+        
+        System.out.print("How many points did Art scored? ");  //accepts the number of points scored by each in a game
+        PlayerScores[0] = input.nextInt();
+        System.out.print("How many points did Bob scored? ");
+        PlayerScores[1] = input.nextInt();
+        System.out.print("How many points did Cal scored? ");
+        PlayerScores[2] = input.nextInt();
+        System.out.print("How many points did Dan scored? ");
+        PlayerScores[3] = input.nextInt();
+        System.out.print("How many points did Eli scored? ");
+        PlayerScores[4] = input.nextInt();
+        
+        int i;
+        for(i=0; i<PlayerName.length; i++)   //create a bar chart that illustrates the points scored
+        {
+            System.out.println(PlayerName[i] + " ");
+            for (int k=0; k<PlayerScores[i]; k++)
+            {
+                System.out.println("*");
+            }
+        }
+        System.out.println();
+    }
+}
