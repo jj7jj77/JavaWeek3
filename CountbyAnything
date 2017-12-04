@@ -1,0 +1,19 @@
+package javaclassweek3;
+import java.util.Scanner;
+public class CountbyAnything 
+{
+    public static void main(String[] args) 
+    {
+        Scanner input = new Scanner (System.in);
+        System.out.print("Count by ? ");  //user enters the value to count by
+        int n = input.nextInt();
+        
+        int x;
+        for (x=n; x<=n*100; x+=n)
+        {
+            System.out.print (x + "  ");
+            if (x%(n*10)==0)   //start each new line after 10 values have been displayed
+            System.out.println();
+        }
+    }
+}
