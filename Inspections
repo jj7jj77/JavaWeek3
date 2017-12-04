@@ -1,0 +1,36 @@
+package javaclassweek3;
+public class Inspections
+{
+    public static void main(String[] args)
+    {
+        //double y = 4*Math.random(); // numb between 0-4
+        //double y = 100*Math.random();
+        //int x= (int) y;
+        //int x= (int) y+1;
+        //System.out.println(x);
+        int i;
+        int c1 = 0;
+        int c2 = 0;
+        int c3 = 0; 
+        int c4 = 0;
+        for (i=1; i<52; i++)
+        {
+            double y = 4 * Math.random(); //numb between 0-4
+            int x= (int) y+1;
+            
+            if (x==1)
+                c1++;
+            else if (x==2)
+                c2++;
+            else if (x==3)
+                c3++;
+            else
+                c4++;
+            System.out.println("In week " + i + " inspect facorty " + x);
+        }
+        System.out.println("Facorty 1 got inspected " + c1 + " times ");
+        System.out.println("Facorty 1 got inspected " + c2 + " times ");
+        System.out.println("Facorty 1 got inspected " + c3 + " times ");
+        System.out.println("Facorty 1 got inspected " + c4 + " times ");
+    }
+}
