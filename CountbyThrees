@@ -1,5 +1,4 @@
 package javaclassweek3;
-
 public class CountbyThrees 
 {
     public static void main(String[] args) 
