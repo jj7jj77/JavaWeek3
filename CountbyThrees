@@ -1,0 +1,15 @@
+package javaclassweek3;
+
+public class CountbyThrees 
+{
+    public static void main(String[] args) 
+    {
+        int x;
+        for (x=3; x<=300; x+=3)  //counts by three from 3 through 300 inclusive
+        {
+            System.out.print (x + "  ");  //starts a new line after...
+            if (x%30==0)  //...after every multiple of 30 (30, 60, 60, and so on)
+                System.out.println();
+        }
+    }
+}
